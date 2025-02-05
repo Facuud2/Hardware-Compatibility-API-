@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
-    fetch(`http://localhost:8080/listado/${id}`)
+    fetch(`https://hardware-components-api-production.up.railway.app/listado/${id}`)
         .then(response => response.json())
         .then(producto => {
             const nombreProducto = document.getElementById('nombreProducto');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!productId || !tipoProducto) return;
 
-    fetch(`http://localhost:8080/listado/${productId}/compatibles/${tipoProducto}`)
+    fetch(`https://hardware-components-api-production.up.railway.app/listado/${productId}/compatibles/${tipoProducto}`)
         .then(response => response.json())
         .then(data => {
             const list = document.getElementById("compatibleProducts");
