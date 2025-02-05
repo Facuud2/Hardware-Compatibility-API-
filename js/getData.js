@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Llamada al backend para obtener los productos
-    fetch("http://localhost:8080/listado")
+    fetch("https://hardware-components-api-production.up.railway.app/listado")
         .then((response) => {
             if (!response.ok) {
                 throw new Error("Error al obtener los productos");
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const tipoProducto = filtroSelect.value;
     
             // Llamada al backend para obtener los productos filtrados
-            fetch(`http://localhost:8080/listado/tipo/${tipoProducto}`)
+            fetch(`https://hardware-components-api-production.up.railway.app/listado/tipo/${tipoProducto}`)
                 .then((response) => {
                     if (!response.ok) {
                         throw new Error("Error al obtener los productos filtrados");
