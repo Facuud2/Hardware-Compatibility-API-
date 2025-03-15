@@ -23,7 +23,7 @@
 ---
 
 ## Demo tecnica 🌐
-`[Demo en vivo proximamente]` |  [Video Demo Demostrativo](https://youtu.be/D0cVW55My0A)
+[Demo en vivo](https://hardware-compatibility-api.vercel.app/) |  [Video Demo Demostrativo](https://youtu.be/D0cVW55My0A)
 
 ## Descripción
 
